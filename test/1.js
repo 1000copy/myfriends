@@ -74,13 +74,52 @@ describe('redis',function(){
 			assert.equal(value,a);	
 		});
 	})
-	it('man',function(){
+	it("set man:1 {'name':'周瑜'}",function(){
+		// console.log("周瑜");
 		var key ="man:1";
-		var json_value ={'name':'z'}
-		var value = JSON.stringify(json_value);
-		redis.set("man:1",value);
-		redis.get("man:1",function(err,a){
-			assert.equal(value,a);	
+		var value ={'name':'周瑜'};
+		redis.set("man:1",JSON.stringify(value));
+		redis.get("man:1",function(err,redis_value){
+			// assert.equal(value,JSON.parse(redis_value));
+			assert.equal(JSON.stringify(value),redis_value);
+		});
+	})
+	it("set man:1 {'name':'小乔'}",function(){
+		// console.log("周瑜");
+		var key ="man:2";
+		var value ={'name':'小乔'};
+		redis.set(key,JSON.stringify(value));
+		redis.get(key,function(err,redis_value){
+			// assert.equal(value,JSON.parse(redis_value));
+			assert.equal(JSON.stringify(value),redis_value);
+		});
+	})
+	it("set event:1 '@周瑜 给 @小乔买了一个包，价值￥10000多，于是，她昨晚就从了他。'",function(){
+		// console.log("周瑜");
+		var key ="event:1";
+		var value ="@周瑜 给 @小乔买了一个包，价值￥10000多，于是，她昨晚就从了他。";
+		redis.set(key,value);
+		redis.get(key,function(err,redis_value){
+			// assert.equal(value,JSON.parse(redis_value));
+			assert.equal(value,redis_value);
+		});
+	})
+	it("set event:2 '随后 @周瑜 又为 @大乔 搞了一个诗社，这样，乔阁老一家被整合完毕。'",function(){
+		// console.log("周瑜");
+		var key ="event:2";
+		var value ="随后 @周瑜 又为 @大乔 搞了一个诗社，这样，乔阁老一家被整合完毕。";
+		redis.set(key,value);
+		redis.get(key,function(err,redis_value){
+			// assert.equal(value,JSON.parse(redis_value));
+			assert.equal(value,redis_value);
+		});
+	})
+	it("woo,koo'",function(){
+		redis.sadd("man_event:周瑜",1);
+		redis.sadd("man_event:周瑜",2);
+		redis.sadd("man_event:小乔",1);
+		redis.smembers("man_event:周瑜",function(err,redis_value){
+			assert.equal("1,2",redis_value.join(","));
 		});
 	})
 })
