@@ -1,5 +1,7 @@
 common = require("../src/common.js");
 assert = require("assert")
+var redis_ = require("redis")
+var redis = redis_.createClient();
 describe('Array', function(){
   describe('#indexOf()', function(){
     it('should return -1 when the value is not present', function(){
@@ -53,6 +55,37 @@ describe('regex',function(){
 		assert.equal(r,true,a)
 	})
 })
+
+describe('redis',function(){
+	it('get & set',function(){
+		var str = "1";
+		redis.set("a",str);
+		redis.get("a",function(err,a){
+			assert.equal(str,a);	
+		});
+		// redis.quit();
+	})
+	it('man',function(){
+		var key ="man:1";
+		var json_value ={'name':'ff'}
+		var value = JSON.stringify(json_value);
+		redis.set("man:1",value);
+		redis.get("man:1",function(err,a){
+			assert.equal(value,a);	
+		});
+	})
+	it('man',function(){
+		var key ="man:1";
+		var json_value ={'name':'z'}
+		var value = JSON.stringify(json_value);
+		redis.set("man:1",value);
+		redis.get("man:1",function(err,a){
+			assert.equal(value,a);	
+		});
+	})
+})
+
+
 
 
 
