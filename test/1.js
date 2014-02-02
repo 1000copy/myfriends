@@ -122,6 +122,29 @@ describe('redis',function(){
 			assert.equal("1,2",redis_value.join(","));
 		});
 	})
+	it("和周瑜有关的帖子",function(){
+		var man ="周瑜";
+		console.log("和周瑜有关的帖子")
+		redis.smembers("man_event:"+man,function(err,redis_value){
+			assert.equal("1,2",redis_value.join(","));
+			redis_value.forEach(function(event_id){
+				redis.get("event:"+event_id,function(err,event){
+					console.log(event_id,event);
+				})
+			})
+		});
+	})
+	it("全部帖子",function(){
+		console.log("all post")
+		redis.keys("event:*",function(err,redis_value){
+			assert.equal("event:2,event:1",redis_value.join(","));
+			redis_value.forEach(function(item){
+				redis.get(item,function(err,item){
+					console.log(item)
+				})
+			})
+		});
+	})
 })
 
 
