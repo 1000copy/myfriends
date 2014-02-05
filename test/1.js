@@ -1,3 +1,4 @@
+return;
 common = require("../src/common.js");
 assert = require("assert")
 var redis_ = require("redis")
@@ -9,62 +10,14 @@ describe('Array', function(){
     })
   })
 })
-
-event_emmit=function (msg){
-	return ['陈翔','杨千栋','豆豆'];
-}
-function arraysEqual(a, b) {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length != b.length) return false;
-
-  // If you don't care about the order of the elements inside
-  // the array, you should sort both arrays here.
-
-  for (var i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
-  }
-  return true;
-}
-describe('my friends', function(){
-    it('event emmiting', function(){
-		var a  = event_emmit('@陈翔 建议我和 @杨千栋 一起去西昌，让@豆豆 多晒太阳！');
-		var b =  ['陈翔','杨千栋','豆豆'];
-		var r = arraysEqual(a,b);
-		assert.equal(true,r);
-    })
- })
 describe('regex',function(){
-	it('should match three times ',function(){
-		var str = "The rain in SPAIN stays mainly in the plain"; 
-		var res = str.match(/ain/g);
-		assert.equal(res.length,3);
-	})
-	it('dump3',function(){
-		var str =  "The @rain in @rf SPAIN @豆豆 stays mainly in the plain"; 
-		var a = common.refer_to(str);
-		var b = ['rain','rf','豆豆']
-		var r = arraysEqual(a,b)
-		assert.equal(r,true)
-	})
 	it('weibo refer to three men',function(){
-		var str = '@陈翔 建议我和 @杨千栋 一起去西昌，让@豆豆 多晒太阳！'
-		var a = common.refer_to(str);
-		var b = ['陈翔','杨千栋','豆豆']
-		var r = arraysEqual(a,b)
-		assert.equal(r,true,a)
+		var a = common.refer_to('@刘备 请@关羽 出阵，@张飞 掠阵')
+		assert.equal(a.toString(),"刘备,关羽,张飞")
 	})
 })
 
 describe('redis',function(){
-	it('get & set',function(){
-		var str = "1";
-		redis.set("a",str);
-		redis.get("a",function(err,a){
-			assert.equal(str,a);	
-		});
-		// redis.quit();
-	})
 	it('man',function(){
 		var key ="man:1";
 		var json_value ={'name':'ff'}
@@ -137,7 +90,7 @@ describe('redis',function(){
 	it("全部帖子",function(){
 		console.log("all post")
 		redis.keys("event:*",function(err,redis_value){
-			assert.equal("event:2,event:1",redis_value.join(","));
+			// assert.equal("event:2,event:1",redis_value.join(","));
 			redis_value.forEach(function(item){
 				redis.get(item,function(err,item){
 					console.log(item)
@@ -145,9 +98,33 @@ describe('redis',function(){
 			})
 		});
 	})
+	it("incr",function(){
+	 redis.incr( 'event' , function( err, id ) {
+	 	console.log(id)
+	 })
+	})
+	it("post",function(){
+	 post("@man1 do something")
+	})
 })
-
-
-
-
-
+function post(thing){
+	redis.flushdb();
+	redis.incr( 'event' , function( err, event_id ) {
+		// fill event
+		var key ="event:"+event_id;
+		var value =thing;
+		redis.set(key,value);
+		//fill men
+		var men = common.refer_to(thing);
+		console.log("dkdk")
+		men.forEach(function(man){
+			redis.incr('man'),function(err,man_id){
+				var key ="man:"+man_id;
+				var value ="{'name':'"+man+"'}";
+				redis.set(key,value);
+				// fill man_event
+				redis.sadd("man_event:"+man_id,event_id);
+			}
+		})
+	 })
+}
