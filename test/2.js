@@ -6,10 +6,9 @@ var redis = redis_.createClient();
 describe('redis',function(){
 	redis.flushdb()
 	it("post",function(){
-		 post("@man1 do something for @man2 ",function(){
-		 	console.log("post 2")
-		 	post("do something1 for @man1 ")	
-		 })
+		 post("@man1 do something for @man2 ")
+		 post("do something1 for @man1 ")	
+		 post("@刘备 请@关羽 出阵，@张飞 掠阵")
 	})
 })
 function post1(thing){
