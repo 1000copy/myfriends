@@ -1,4 +1,6 @@
 exports.refer_to = refer_to;
+// exports.post = post;
+var redis = require("redis")
 function refer_to(str){
 	var start ='@'
 	var end = ' '
