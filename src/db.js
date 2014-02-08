@@ -1,5 +1,6 @@
 exports.post = post;
 exports.flushdb = flushdb;
+exports.get_events = get_events;
 var redis_ = require("redis")
 var redis = redis_.createClient();
 
@@ -23,8 +24,23 @@ function post(thing ,callback){
 		})
 	})
 }
+
 function flushdb(){
 	redis.flushdb();
+}
+function get_events(callback){
+	// return [1,2,3];
+	var events = [];
+	redis.keys("event:*",function(err,keys){
+		keys.forEach(function(key){
+			redis.get(key,function(err,item){
+				events.push(item)
+				if (events.length == keys.length)
+					callback(events)
+			})
+		})
+		
+	})	
 }
 function post1(thing){
 	redis.flushdb()
