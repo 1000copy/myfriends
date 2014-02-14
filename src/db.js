@@ -15,7 +15,7 @@ function post(thing ,callback){
 		var men = common.refer_to(thing);
 		console.log("//fill men")
 		if (men.length==0)
-			callback()
+			if (callback)callback()
 		else
 			men.forEach(function(man){
 				console.log("//fill men1")
@@ -25,7 +25,7 @@ function post(thing ,callback){
 				// fill man_event
 				redis.sadd("man_event:"+man,event_id);
 				if (man ==men[men.length-1] && callback )
-					callback();
+					if (callback)callback()
 			})
 	})
 }
