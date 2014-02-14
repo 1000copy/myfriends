@@ -3,27 +3,33 @@ exports.flushdb = flushdb;
 exports.get_events = get_events;
 var redis_ = require("redis")
 var redis = redis_.createClient();
-
+var common = require("./common.js")
 function post(thing ,callback){
-	
+	// if(!thing)callback();
 	redis.incr( 'count:event' , function( err, event_id ) {
-		// fill event
+		console.log("// fill event")
 		var key ="event:"+event_id;
 		var value =thing;
 		redis.set(key,value);
 		//fill men
 		var men = common.refer_to(thing);
-		men.forEach(function(man){
-			var key ="man:"+man;
-			var value ="{'name':'"+man+"'}";
-			redis.set(key,value);
-			// fill man_event
-			redis.sadd("man_event:"+man,event_id);
-			if (man ==men[men.length-1] && callback )
-				callback();
-		})
+		console.log("//fill men")
+		if (men.length==0)
+			callback()
+		else
+			men.forEach(function(man){
+				console.log("//fill men1")
+				var key ="man:"+man;
+				var value ="{'name':'"+man+"'}";
+				redis.set(key,value);
+				// fill man_event
+				redis.sadd("man_event:"+man,event_id);
+				if (man ==men[men.length-1] && callback )
+					callback();
+			})
 	})
 }
+
 
 function flushdb(){
 	redis.flushdb();
