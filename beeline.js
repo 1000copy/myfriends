@@ -89,14 +89,19 @@ var router = bee.route({ // Create a new router
                 #placeholder#
             </ul>
         */}.toString().slice(14,-3)
-        // console.log(tokens.event)
+        console.log("tokens")
         get_ui_event(req,function(event){
-            if(event)
+            console.log("event",event)
+            if(event){
+                console.log("t2")
                 db.post(event,function(){
                     ui_events(mstring,res)
                 })
-            else
+            }
+            else{
+                console.log("t3")
                 ui_events(mstring,res)
+            }
         })
         
     }  
@@ -136,6 +141,7 @@ function get_ui_event(req,callback){
                 callback(thing)
             });
         }
+        callback()
 }
 function ui_events(mstring,res){
     db.get_events(function(events){

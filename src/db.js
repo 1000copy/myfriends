@@ -38,6 +38,8 @@ function get_events(callback){
 	// return [1,2,3];
 	var events = [];
 	redis.keys("event:*",function(err,keys){
+		if (keys.length ==0)
+			callback([])
 		keys.forEach(function(key){
 			redis.get(key,function(err,item){
 				events.push(item)

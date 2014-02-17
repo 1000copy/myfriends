@@ -1,0 +1,1266 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'nerve' ]
+2 info using npm@1.3.23
+3 info using node@v0.11.11-pre
+4 verbose cache add [ 'nerve', null ]
+5 verbose cache add name=undefined spec="nerve" args=["nerve",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'nerve',
+6 verbose parsed url   path: 'nerve',
+6 verbose parsed url   href: 'nerve' }
+7 silly lockFile 424a55e0-nerve nerve
+8 verbose lock nerve /Users/lcjun/.npm/424a55e0-nerve.lock
+9 silly lockFile 424a55e0-nerve nerve
+10 silly lockFile 424a55e0-nerve nerve
+11 verbose addNamed [ 'nerve', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9c037e42-nerve nerve@
+14 verbose lock nerve@ /Users/lcjun/.npm/9c037e42-nerve.lock
+15 silly addNameRange { name: 'nerve', range: '*', hasData: false }
+16 verbose url raw nerve
+17 verbose url resolving [ 'https://registry.npmjs.org/', './nerve' ]
+18 verbose url resolved https://registry.npmjs.org/nerve
+19 info trying registry request attempt 1 at 00:16:20
+20 http GET https://registry.npmjs.org/nerve
+21 http 200 https://registry.npmjs.org/nerve
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Wed, 05 Feb 2014 16:16:21 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+22 silly registry.get     etag: '"9K3AQUNS6JZ5FC1431IFFSNQV"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '25473',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-ty66-TYO',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1391616981.087988377,VS0,VS89,VE144,VE228',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     connection: 'close' } ]
+23 silly addNameRange number 2 { name: 'nerve', range: '*', hasData: true }
+24 silly addNameRange versions [ 'nerve',
+24 silly addNameRange   [ '0.0.1',
+24 silly addNameRange     '0.0.2',
+24 silly addNameRange     '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.0.7',
+24 silly addNameRange     '0.0.8',
+24 silly addNameRange     '0.0.9',
+24 silly addNameRange     '0.0.10',
+24 silly addNameRange     '0.0.11',
+24 silly addNameRange     '0.0.12',
+24 silly addNameRange     '0.0.13',
+24 silly addNameRange     '0.0.14',
+24 silly addNameRange     '0.0.15',
+24 silly addNameRange     '0.0.16',
+24 silly addNameRange     '0.0.17',
+24 silly addNameRange     '0.0.18' ] ]
+25 verbose addNamed [ 'nerve', '0.0.18' ]
+26 verbose addNamed [ '0.0.18', '0.0.18' ]
+27 silly lockFile 13bee3a4-nerve-0-0-18 nerve@0.0.18
+28 verbose lock nerve@0.0.18 /Users/lcjun/.npm/13bee3a4-nerve-0-0-18.lock
+29 silly lockFile 57b53a20-npmjs-org-nerve-nerve-0-0-18-tgz https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz
+30 verbose lock https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz /Users/lcjun/.npm/57b53a20-npmjs-org-nerve-nerve-0-0-18-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz',
+31 verbose addRemoteTarball   '01f868081ed81b59bb5a193761f068779955de2f' ]
+32 info retry fetch attempt 1 at 00:16:22
+33 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz
+34 http GET https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz
+35 http 200 https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz
+36 verbose tar unpack /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz
+37 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+38 verbose lock tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package /Users/lcjun/.npm/d5ee1b90-2159-0-03380490024574101-package.lock
+39 silly lockFile f4f56566-2159-0-03380490024574101-tmp-tgz tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz
+40 verbose lock tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz /Users/lcjun/.npm/f4f56566-2159-0-03380490024574101-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry LICENSE
+46 silly gunzTarPerm extractEntry lib/Blog.js
+47 silly gunzTarPerm extractEntry lib/FlickrTransformer.js
+48 silly gunzTarPerm extractEntry lib/ImageTransformer.js
+49 silly gunzTarPerm extractEntry lib/nerve.js
+50 silly gunzTarPerm extractEntry lib/BlogRouter.js
+51 silly gunzTarPerm extractEntry lib/NerveTransformer.js
+52 silly gunzTarPerm extractEntry lib/Post.js
+53 silly gunzTarPerm extractEntry lib/PostSummarizer.js
+54 silly gunzTarPerm extractEntry lib/RSSTransformer.js
+55 silly gunzTarPerm extractEntry lib/syndicate.js
+56 silly gunzTarPerm extractEntry lib/NerveAPI.js
+57 silly gunzTarPerm extractEntry Makefile
+58 silly gunzTarPerm extractEntry test/nerve-test.js
+59 silly gunzTarPerm extractEntry test/blogs/a/package.json
+60 silly gunzTarPerm extractEntry test/blogs/a/client.js
+61 silly gunzTarPerm extractEntry test/blogs/a/fig.js
+62 silly gunzTarPerm extractEntry test/blogs/a/server.js
+63 silly gunzTarPerm extractEntry test/blogs/a/static/foofy.css
+64 silly gunzTarPerm extractEntry test/blogs/a.md
+65 silly gunzTarPerm extractEntry test/blogs/b/about.md
+66 silly gunzTarPerm extractEntry test/blogs/b/post1.md
+67 silly gunzTarPerm extractEntry test/blogs/b/post2.md
+68 silly gunzTarPerm extractEntry test/blogs/b/post3.md
+69 silly gunzTarPerm extractEntry test/blogs/c/images/salvia.jpg
+70 silly gunzTarPerm extractEntry test/blogs/c/posts.md
+71 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+72 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+73 silly lockFile f4f56566-2159-0-03380490024574101-tmp-tgz tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz
+74 silly lockFile f4f56566-2159-0-03380490024574101-tmp-tgz tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/tmp.tgz
+75 verbose tar pack [ '/Users/lcjun/.npm/nerve/0.0.18/package.tgz',
+75 verbose tar pack   '/var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package' ]
+76 verbose tarball /Users/lcjun/.npm/nerve/0.0.18/package.tgz
+77 verbose folder /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+78 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+79 verbose lock tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package /Users/lcjun/.npm/d5ee1b90-2159-0-03380490024574101-package.lock
+80 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+81 verbose lock tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz /Users/lcjun/.npm/d55e2909-jun-npm-nerve-0-0-18-package-tgz.lock
+82 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+83 silly lockFile d5ee1b90-2159-0-03380490024574101-package tar:///var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391616982159-0.03380490024574101/package
+84 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+85 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+86 silly lockFile dd23b175-s-lcjun-npm-nerve-0-0-18-package /Users/lcjun/.npm/nerve/0.0.18/package
+87 verbose lock /Users/lcjun/.npm/nerve/0.0.18/package /Users/lcjun/.npm/dd23b175-s-lcjun-npm-nerve-0-0-18-package.lock
+88 silly lockFile dd23b175-s-lcjun-npm-nerve-0-0-18-package /Users/lcjun/.npm/nerve/0.0.18/package
+89 silly lockFile dd23b175-s-lcjun-npm-nerve-0-0-18-package /Users/lcjun/.npm/nerve/0.0.18/package
+90 verbose tar unpack /Users/lcjun/.npm/nerve/0.0.18/package.tgz
+91 silly lockFile 63ad7c6b-s-lcjun-npm-nerve-0-0-18-package tar:///Users/lcjun/.npm/nerve/0.0.18/package
+92 verbose lock tar:///Users/lcjun/.npm/nerve/0.0.18/package /Users/lcjun/.npm/63ad7c6b-s-lcjun-npm-nerve-0-0-18-package.lock
+93 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+94 verbose lock tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz /Users/lcjun/.npm/d55e2909-jun-npm-nerve-0-0-18-package-tgz.lock
+95 silly gunzTarPerm modes [ '755', '644' ]
+96 silly gunzTarPerm extractEntry package.json
+97 silly gunzTarPerm extractEntry .npmignore
+98 silly gunzTarPerm extractEntry README.md
+99 silly gunzTarPerm extractEntry LICENSE
+100 silly gunzTarPerm extractEntry Makefile
+101 silly gunzTarPerm extractEntry lib/Blog.js
+102 silly gunzTarPerm extractEntry lib/FlickrTransformer.js
+103 silly gunzTarPerm extractEntry lib/ImageTransformer.js
+104 silly gunzTarPerm extractEntry lib/NerveAPI.js
+105 silly gunzTarPerm extractEntry lib/BlogRouter.js
+106 silly gunzTarPerm extractEntry lib/Post.js
+107 silly gunzTarPerm extractEntry lib/PostSummarizer.js
+108 silly gunzTarPerm extractEntry lib/RSSTransformer.js
+109 silly gunzTarPerm extractEntry lib/nerve.js
+110 silly gunzTarPerm extractEntry lib/syndicate.js
+111 silly gunzTarPerm extractEntry lib/NerveTransformer.js
+112 silly gunzTarPerm extractEntry test/nerve-test.js
+113 silly gunzTarPerm extractEntry test/blogs/a/package.json
+114 silly gunzTarPerm extractEntry test/blogs/a/client.js
+115 silly gunzTarPerm extractEntry test/blogs/a/fig.js
+116 silly gunzTarPerm extractEntry test/blogs/a/server.js
+117 silly gunzTarPerm extractEntry test/blogs/a/static/foofy.css
+118 silly gunzTarPerm extractEntry test/blogs/a.md
+119 silly gunzTarPerm extractEntry test/blogs/b/about.md
+120 silly gunzTarPerm extractEntry test/blogs/b/post1.md
+121 silly gunzTarPerm extractEntry test/blogs/b/post2.md
+122 silly gunzTarPerm extractEntry test/blogs/b/post3.md
+123 silly gunzTarPerm extractEntry test/blogs/c/images/salvia.jpg
+124 silly gunzTarPerm extractEntry test/blogs/c/posts.md
+125 silly lockFile 63ad7c6b-s-lcjun-npm-nerve-0-0-18-package tar:///Users/lcjun/.npm/nerve/0.0.18/package
+126 silly lockFile 63ad7c6b-s-lcjun-npm-nerve-0-0-18-package tar:///Users/lcjun/.npm/nerve/0.0.18/package
+127 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+128 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+129 verbose chmod /Users/lcjun/.npm/nerve/0.0.18/package.tgz 644
+130 verbose chown /Users/lcjun/.npm/nerve/0.0.18/package.tgz [ 502, 20 ]
+131 silly lockFile 57b53a20-npmjs-org-nerve-nerve-0-0-18-tgz https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz
+132 silly lockFile 57b53a20-npmjs-org-nerve-nerve-0-0-18-tgz https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz
+133 silly lockFile 13bee3a4-nerve-0-0-18 nerve@0.0.18
+134 silly lockFile 13bee3a4-nerve-0-0-18 nerve@0.0.18
+135 silly lockFile 9c037e42-nerve nerve@
+136 silly lockFile 9c037e42-nerve nerve@
+137 silly resolved [ { name: 'nerve',
+137 silly resolved     description: 'Nerve blogging platform',
+137 silly resolved     version: '0.0.18',
+137 silly resolved     homepage: 'http://github.com/joehewitt/nerve',
+137 silly resolved     repository: { type: 'git', url: 'git://github.com/joehewitt/nerve.git' },
+137 silly resolved     keywords: [ 'blog' ],
+137 silly resolved     author: { name: 'Joe Hewitt', email: 'joe@joehewitt.com' },
+137 silly resolved     contributors: [],
+137 silly resolved     dependencies:
+137 silly resolved      { 'app.js': '',
+137 silly resolved        'api.js': '',
+137 silly resolved        async: '',
+137 silly resolved        bcrypt: '',
+137 silly resolved        dandy: '',
+137 silly resolved        datetime: '',
+137 silly resolved        diskcache: '',
+137 silly resolved        'express-store': '',
+137 silly resolved        'flickr-reflection': '',
+137 silly resolved        glob: '',
+137 silly resolved        handlebars: '',
+137 silly resolved        imagemagick: '',
+137 silly resolved        jsdom: '',
+137 silly resolved        markdom: '',
+137 silly resolved        optimist: '',
+137 silly resolved        underscore: '',
+137 silly resolved        temp: '',
+137 silly resolved        watch: '',
+137 silly resolved        vows: '>=0.5.4' },
+137 silly resolved     main: './lib/nerve',
+137 silly resolved     directories: { test: './test' },
+137 silly resolved     engines: { node: '>=0.4.0' },
+137 silly resolved     devDependencies: {},
+137 silly resolved     optionalDependencies: {},
+137 silly resolved     readme: 'nerve\n========\n\nA Node.js blogging platform.\n\nInstallation\n------------\n\n    $ npm install nerve\n\nLicense \n-------\n\nCopyright 2011 Joe Hewitt\n\nLicensed under the Apache License, Version 2.0 (the "License");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n \n   http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an "AS IS" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n',
+137 silly resolved     readmeFilename: 'README.md',
+137 silly resolved     bugs: { url: 'https://github.com/joehewitt/nerve/issues' },
+137 silly resolved     _id: 'nerve@0.0.18',
+137 silly resolved     dist: { shasum: 'fe2ee9fd82b5c4044bfb4536075421478fdf2da5' },
+137 silly resolved     _from: 'nerve@',
+137 silly resolved     _resolved: 'https://registry.npmjs.org/nerve/-/nerve-0.0.18.tgz' } ]
+138 info install nerve@0.0.18 into /Users/lcjun
+139 info installOne nerve@0.0.18
+140 info /Users/lcjun/node_modules/nerve unbuild
+141 verbose tar unpack /Users/lcjun/.npm/nerve/0.0.18/package.tgz
+142 silly lockFile 3029881c-r-Users-lcjun-node-modules-nerve tar:///Users/lcjun/node_modules/nerve
+143 verbose lock tar:///Users/lcjun/node_modules/nerve /Users/lcjun/.npm/3029881c-r-Users-lcjun-node-modules-nerve.lock
+144 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+145 verbose lock tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz /Users/lcjun/.npm/d55e2909-jun-npm-nerve-0-0-18-package-tgz.lock
+146 silly gunzTarPerm modes [ '755', '644' ]
+147 silly gunzTarPerm extractEntry package.json
+148 silly gunzTarPerm extractEntry .npmignore
+149 silly gunzTarPerm extractEntry README.md
+150 silly gunzTarPerm extractEntry LICENSE
+151 silly gunzTarPerm extractEntry Makefile
+152 silly gunzTarPerm extractEntry lib/Blog.js
+153 silly gunzTarPerm extractEntry lib/FlickrTransformer.js
+154 silly gunzTarPerm extractEntry lib/ImageTransformer.js
+155 silly gunzTarPerm extractEntry lib/NerveAPI.js
+156 silly gunzTarPerm extractEntry lib/BlogRouter.js
+157 silly gunzTarPerm extractEntry lib/Post.js
+158 silly gunzTarPerm extractEntry lib/PostSummarizer.js
+159 silly gunzTarPerm extractEntry lib/RSSTransformer.js
+160 silly gunzTarPerm extractEntry lib/nerve.js
+161 silly gunzTarPerm extractEntry lib/syndicate.js
+162 silly gunzTarPerm extractEntry lib/NerveTransformer.js
+163 silly gunzTarPerm extractEntry test/nerve-test.js
+164 silly gunzTarPerm extractEntry test/blogs/a/package.json
+165 silly gunzTarPerm extractEntry test/blogs/a/client.js
+166 silly gunzTarPerm extractEntry test/blogs/a/fig.js
+167 silly gunzTarPerm extractEntry test/blogs/a/server.js
+168 silly gunzTarPerm extractEntry test/blogs/a/static/foofy.css
+169 silly gunzTarPerm extractEntry test/blogs/a.md
+170 silly gunzTarPerm extractEntry test/blogs/b/about.md
+171 silly gunzTarPerm extractEntry test/blogs/b/post1.md
+172 silly gunzTarPerm extractEntry test/blogs/b/post2.md
+173 silly gunzTarPerm extractEntry test/blogs/b/post3.md
+174 silly gunzTarPerm extractEntry test/blogs/c/images/salvia.jpg
+175 silly gunzTarPerm extractEntry test/blogs/c/posts.md
+176 silly lockFile 3029881c-r-Users-lcjun-node-modules-nerve tar:///Users/lcjun/node_modules/nerve
+177 silly lockFile 3029881c-r-Users-lcjun-node-modules-nerve tar:///Users/lcjun/node_modules/nerve
+178 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+179 silly lockFile d55e2909-jun-npm-nerve-0-0-18-package-tgz tar:///Users/lcjun/.npm/nerve/0.0.18/package.tgz
+180 info preinstall nerve@0.0.18
+181 verbose readDependencies using package.json deps
+182 verbose readDependencies using package.json deps
+183 verbose cache add [ 'api.js@', null ]
+184 verbose cache add name=undefined spec="api.js@" args=["api.js@",null]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: 'api.js@',
+185 verbose parsed url   path: 'api.js@',
+185 verbose parsed url   href: 'api.js@' }
+186 verbose cache add name="api.js" spec="" args=["api.js",""]
+187 verbose parsed url { protocol: null,
+187 verbose parsed url   slashes: null,
+187 verbose parsed url   auth: null,
+187 verbose parsed url   host: null,
+187 verbose parsed url   port: null,
+187 verbose parsed url   hostname: null,
+187 verbose parsed url   hash: null,
+187 verbose parsed url   search: null,
+187 verbose parsed url   query: null,
+187 verbose parsed url   pathname: null,
+187 verbose parsed url   path: null,
+187 verbose parsed url   href: '' }
+188 verbose addNamed [ 'api.js', '' ]
+189 verbose addNamed [ null, '*' ]
+190 silly lockFile a12544fa-api-js api.js@
+191 verbose lock api.js@ /Users/lcjun/.npm/a12544fa-api-js.lock
+192 verbose cache add [ 'async@', null ]
+193 verbose cache add name=undefined spec="async@" args=["async@",null]
+194 verbose parsed url { protocol: null,
+194 verbose parsed url   slashes: null,
+194 verbose parsed url   auth: null,
+194 verbose parsed url   host: null,
+194 verbose parsed url   port: null,
+194 verbose parsed url   hostname: null,
+194 verbose parsed url   hash: null,
+194 verbose parsed url   search: null,
+194 verbose parsed url   query: null,
+194 verbose parsed url   pathname: 'async@',
+194 verbose parsed url   path: 'async@',
+194 verbose parsed url   href: 'async@' }
+195 verbose cache add name="async" spec="" args=["async",""]
+196 verbose parsed url { protocol: null,
+196 verbose parsed url   slashes: null,
+196 verbose parsed url   auth: null,
+196 verbose parsed url   host: null,
+196 verbose parsed url   port: null,
+196 verbose parsed url   hostname: null,
+196 verbose parsed url   hash: null,
+196 verbose parsed url   search: null,
+196 verbose parsed url   query: null,
+196 verbose parsed url   pathname: null,
+196 verbose parsed url   path: null,
+196 verbose parsed url   href: '' }
+197 verbose addNamed [ 'async', '' ]
+198 verbose addNamed [ null, '*' ]
+199 silly lockFile f9113900-async async@
+200 verbose lock async@ /Users/lcjun/.npm/f9113900-async.lock
+201 silly addNameRange { name: 'api.js', range: '*', hasData: false }
+202 verbose cache add [ 'bcrypt@', null ]
+203 verbose cache add name=undefined spec="bcrypt@" args=["bcrypt@",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'bcrypt@',
+204 verbose parsed url   path: 'bcrypt@',
+204 verbose parsed url   href: 'bcrypt@' }
+205 verbose cache add name="bcrypt" spec="" args=["bcrypt",""]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: null,
+206 verbose parsed url   path: null,
+206 verbose parsed url   href: '' }
+207 verbose addNamed [ 'bcrypt', '' ]
+208 verbose addNamed [ null, '*' ]
+209 silly lockFile 1351601c-bcrypt bcrypt@
+210 verbose lock bcrypt@ /Users/lcjun/.npm/1351601c-bcrypt.lock
+211 silly addNameRange { name: 'async', range: '*', hasData: false }
+212 verbose url raw api.js
+213 verbose url resolving [ 'https://registry.npmjs.org/', './api.js' ]
+214 verbose url resolved https://registry.npmjs.org/api.js
+215 info trying registry request attempt 1 at 00:17:01
+216 http GET https://registry.npmjs.org/api.js
+217 verbose cache add [ 'dandy@', null ]
+218 verbose cache add name=undefined spec="dandy@" args=["dandy@",null]
+219 verbose parsed url { protocol: null,
+219 verbose parsed url   slashes: null,
+219 verbose parsed url   auth: null,
+219 verbose parsed url   host: null,
+219 verbose parsed url   port: null,
+219 verbose parsed url   hostname: null,
+219 verbose parsed url   hash: null,
+219 verbose parsed url   search: null,
+219 verbose parsed url   query: null,
+219 verbose parsed url   pathname: 'dandy@',
+219 verbose parsed url   path: 'dandy@',
+219 verbose parsed url   href: 'dandy@' }
+220 verbose cache add name="dandy" spec="" args=["dandy",""]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: null,
+221 verbose parsed url   path: null,
+221 verbose parsed url   href: '' }
+222 verbose addNamed [ 'dandy', '' ]
+223 verbose addNamed [ null, '*' ]
+224 silly lockFile d8346ec4-dandy dandy@
+225 verbose lock dandy@ /Users/lcjun/.npm/d8346ec4-dandy.lock
+226 verbose cache add [ 'datetime@', null ]
+227 verbose cache add name=undefined spec="datetime@" args=["datetime@",null]
+228 verbose parsed url { protocol: null,
+228 verbose parsed url   slashes: null,
+228 verbose parsed url   auth: null,
+228 verbose parsed url   host: null,
+228 verbose parsed url   port: null,
+228 verbose parsed url   hostname: null,
+228 verbose parsed url   hash: null,
+228 verbose parsed url   search: null,
+228 verbose parsed url   query: null,
+228 verbose parsed url   pathname: 'datetime@',
+228 verbose parsed url   path: 'datetime@',
+228 verbose parsed url   href: 'datetime@' }
+229 verbose cache add name="datetime" spec="" args=["datetime",""]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: null,
+230 verbose parsed url   path: null,
+230 verbose parsed url   href: '' }
+231 verbose addNamed [ 'datetime', '' ]
+232 verbose addNamed [ null, '*' ]
+233 silly lockFile ba7d4caf-datetime datetime@
+234 verbose lock datetime@ /Users/lcjun/.npm/ba7d4caf-datetime.lock
+235 verbose cache add [ 'diskcache@', null ]
+236 verbose cache add name=undefined spec="diskcache@" args=["diskcache@",null]
+237 verbose parsed url { protocol: null,
+237 verbose parsed url   slashes: null,
+237 verbose parsed url   auth: null,
+237 verbose parsed url   host: null,
+237 verbose parsed url   port: null,
+237 verbose parsed url   hostname: null,
+237 verbose parsed url   hash: null,
+237 verbose parsed url   search: null,
+237 verbose parsed url   query: null,
+237 verbose parsed url   pathname: 'diskcache@',
+237 verbose parsed url   path: 'diskcache@',
+237 verbose parsed url   href: 'diskcache@' }
+238 verbose cache add name="diskcache" spec="" args=["diskcache",""]
+239 verbose parsed url { protocol: null,
+239 verbose parsed url   slashes: null,
+239 verbose parsed url   auth: null,
+239 verbose parsed url   host: null,
+239 verbose parsed url   port: null,
+239 verbose parsed url   hostname: null,
+239 verbose parsed url   hash: null,
+239 verbose parsed url   search: null,
+239 verbose parsed url   query: null,
+239 verbose parsed url   pathname: null,
+239 verbose parsed url   path: null,
+239 verbose parsed url   href: '' }
+240 verbose addNamed [ 'diskcache', '' ]
+241 verbose addNamed [ null, '*' ]
+242 silly lockFile 9c673643-diskcache diskcache@
+243 verbose lock diskcache@ /Users/lcjun/.npm/9c673643-diskcache.lock
+244 verbose cache add [ 'express-store@', null ]
+245 verbose cache add name=undefined spec="express-store@" args=["express-store@",null]
+246 verbose parsed url { protocol: null,
+246 verbose parsed url   slashes: null,
+246 verbose parsed url   auth: null,
+246 verbose parsed url   host: null,
+246 verbose parsed url   port: null,
+246 verbose parsed url   hostname: null,
+246 verbose parsed url   hash: null,
+246 verbose parsed url   search: null,
+246 verbose parsed url   query: null,
+246 verbose parsed url   pathname: 'express-store@',
+246 verbose parsed url   path: 'express-store@',
+246 verbose parsed url   href: 'express-store@' }
+247 verbose cache add name="express-store" spec="" args=["express-store",""]
+248 verbose parsed url { protocol: null,
+248 verbose parsed url   slashes: null,
+248 verbose parsed url   auth: null,
+248 verbose parsed url   host: null,
+248 verbose parsed url   port: null,
+248 verbose parsed url   hostname: null,
+248 verbose parsed url   hash: null,
+248 verbose parsed url   search: null,
+248 verbose parsed url   query: null,
+248 verbose parsed url   pathname: null,
+248 verbose parsed url   path: null,
+248 verbose parsed url   href: '' }
+249 verbose addNamed [ 'express-store', '' ]
+250 verbose addNamed [ null, '*' ]
+251 silly lockFile 3edca7bf-express-store express-store@
+252 verbose lock express-store@ /Users/lcjun/.npm/3edca7bf-express-store.lock
+253 verbose cache add [ 'flickr-reflection@', null ]
+254 verbose cache add name=undefined spec="flickr-reflection@" args=["flickr-reflection@",null]
+255 verbose parsed url { protocol: null,
+255 verbose parsed url   slashes: null,
+255 verbose parsed url   auth: null,
+255 verbose parsed url   host: null,
+255 verbose parsed url   port: null,
+255 verbose parsed url   hostname: null,
+255 verbose parsed url   hash: null,
+255 verbose parsed url   search: null,
+255 verbose parsed url   query: null,
+255 verbose parsed url   pathname: 'flickr-reflection@',
+255 verbose parsed url   path: 'flickr-reflection@',
+255 verbose parsed url   href: 'flickr-reflection@' }
+256 verbose cache add name="flickr-reflection" spec="" args=["flickr-reflection",""]
+257 verbose parsed url { protocol: null,
+257 verbose parsed url   slashes: null,
+257 verbose parsed url   auth: null,
+257 verbose parsed url   host: null,
+257 verbose parsed url   port: null,
+257 verbose parsed url   hostname: null,
+257 verbose parsed url   hash: null,
+257 verbose parsed url   search: null,
+257 verbose parsed url   query: null,
+257 verbose parsed url   pathname: null,
+257 verbose parsed url   path: null,
+257 verbose parsed url   href: '' }
+258 verbose addNamed [ 'flickr-reflection', '' ]
+259 verbose addNamed [ null, '*' ]
+260 silly lockFile 919b367d-flickr-reflection flickr-reflection@
+261 verbose lock flickr-reflection@ /Users/lcjun/.npm/919b367d-flickr-reflection.lock
+262 verbose cache add [ 'glob@', null ]
+263 verbose cache add name=undefined spec="glob@" args=["glob@",null]
+264 verbose parsed url { protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: 'glob@',
+264 verbose parsed url   path: 'glob@',
+264 verbose parsed url   href: 'glob@' }
+265 verbose cache add name="glob" spec="" args=["glob",""]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: null,
+266 verbose parsed url   path: null,
+266 verbose parsed url   href: '' }
+267 verbose addNamed [ 'glob', '' ]
+268 verbose addNamed [ null, '*' ]
+269 silly lockFile d83e044e-glob glob@
+270 verbose lock glob@ /Users/lcjun/.npm/d83e044e-glob.lock
+271 verbose cache add [ 'handlebars@', null ]
+272 verbose cache add name=undefined spec="handlebars@" args=["handlebars@",null]
+273 verbose parsed url { protocol: null,
+273 verbose parsed url   slashes: null,
+273 verbose parsed url   auth: null,
+273 verbose parsed url   host: null,
+273 verbose parsed url   port: null,
+273 verbose parsed url   hostname: null,
+273 verbose parsed url   hash: null,
+273 verbose parsed url   search: null,
+273 verbose parsed url   query: null,
+273 verbose parsed url   pathname: 'handlebars@',
+273 verbose parsed url   path: 'handlebars@',
+273 verbose parsed url   href: 'handlebars@' }
+274 verbose cache add name="handlebars" spec="" args=["handlebars",""]
+275 verbose parsed url { protocol: null,
+275 verbose parsed url   slashes: null,
+275 verbose parsed url   auth: null,
+275 verbose parsed url   host: null,
+275 verbose parsed url   port: null,
+275 verbose parsed url   hostname: null,
+275 verbose parsed url   hash: null,
+275 verbose parsed url   search: null,
+275 verbose parsed url   query: null,
+275 verbose parsed url   pathname: null,
+275 verbose parsed url   path: null,
+275 verbose parsed url   href: '' }
+276 verbose addNamed [ 'handlebars', '' ]
+277 verbose addNamed [ null, '*' ]
+278 silly lockFile 0ab5732f-handlebars handlebars@
+279 verbose lock handlebars@ /Users/lcjun/.npm/0ab5732f-handlebars.lock
+280 verbose cache add [ 'imagemagick@', null ]
+281 verbose cache add name=undefined spec="imagemagick@" args=["imagemagick@",null]
+282 verbose parsed url { protocol: null,
+282 verbose parsed url   slashes: null,
+282 verbose parsed url   auth: null,
+282 verbose parsed url   host: null,
+282 verbose parsed url   port: null,
+282 verbose parsed url   hostname: null,
+282 verbose parsed url   hash: null,
+282 verbose parsed url   search: null,
+282 verbose parsed url   query: null,
+282 verbose parsed url   pathname: 'imagemagick@',
+282 verbose parsed url   path: 'imagemagick@',
+282 verbose parsed url   href: 'imagemagick@' }
+283 verbose cache add name="imagemagick" spec="" args=["imagemagick",""]
+284 verbose parsed url { protocol: null,
+284 verbose parsed url   slashes: null,
+284 verbose parsed url   auth: null,
+284 verbose parsed url   host: null,
+284 verbose parsed url   port: null,
+284 verbose parsed url   hostname: null,
+284 verbose parsed url   hash: null,
+284 verbose parsed url   search: null,
+284 verbose parsed url   query: null,
+284 verbose parsed url   pathname: null,
+284 verbose parsed url   path: null,
+284 verbose parsed url   href: '' }
+285 verbose addNamed [ 'imagemagick', '' ]
+286 verbose addNamed [ null, '*' ]
+287 silly lockFile cf22fc7d-imagemagick imagemagick@
+288 verbose lock imagemagick@ /Users/lcjun/.npm/cf22fc7d-imagemagick.lock
+289 verbose cache add [ 'jsdom@', null ]
+290 verbose cache add name=undefined spec="jsdom@" args=["jsdom@",null]
+291 verbose parsed url { protocol: null,
+291 verbose parsed url   slashes: null,
+291 verbose parsed url   auth: null,
+291 verbose parsed url   host: null,
+291 verbose parsed url   port: null,
+291 verbose parsed url   hostname: null,
+291 verbose parsed url   hash: null,
+291 verbose parsed url   search: null,
+291 verbose parsed url   query: null,
+291 verbose parsed url   pathname: 'jsdom@',
+291 verbose parsed url   path: 'jsdom@',
+291 verbose parsed url   href: 'jsdom@' }
+292 verbose cache add name="jsdom" spec="" args=["jsdom",""]
+293 verbose parsed url { protocol: null,
+293 verbose parsed url   slashes: null,
+293 verbose parsed url   auth: null,
+293 verbose parsed url   host: null,
+293 verbose parsed url   port: null,
+293 verbose parsed url   hostname: null,
+293 verbose parsed url   hash: null,
+293 verbose parsed url   search: null,
+293 verbose parsed url   query: null,
+293 verbose parsed url   pathname: null,
+293 verbose parsed url   path: null,
+293 verbose parsed url   href: '' }
+294 verbose addNamed [ 'jsdom', '' ]
+295 verbose addNamed [ null, '*' ]
+296 silly lockFile be40d96d-jsdom jsdom@
+297 verbose lock jsdom@ /Users/lcjun/.npm/be40d96d-jsdom.lock
+298 verbose cache add [ 'markdom@', null ]
+299 verbose cache add name=undefined spec="markdom@" args=["markdom@",null]
+300 verbose parsed url { protocol: null,
+300 verbose parsed url   slashes: null,
+300 verbose parsed url   auth: null,
+300 verbose parsed url   host: null,
+300 verbose parsed url   port: null,
+300 verbose parsed url   hostname: null,
+300 verbose parsed url   hash: null,
+300 verbose parsed url   search: null,
+300 verbose parsed url   query: null,
+300 verbose parsed url   pathname: 'markdom@',
+300 verbose parsed url   path: 'markdom@',
+300 verbose parsed url   href: 'markdom@' }
+301 verbose cache add name="markdom" spec="" args=["markdom",""]
+302 verbose parsed url { protocol: null,
+302 verbose parsed url   slashes: null,
+302 verbose parsed url   auth: null,
+302 verbose parsed url   host: null,
+302 verbose parsed url   port: null,
+302 verbose parsed url   hostname: null,
+302 verbose parsed url   hash: null,
+302 verbose parsed url   search: null,
+302 verbose parsed url   query: null,
+302 verbose parsed url   pathname: null,
+302 verbose parsed url   path: null,
+302 verbose parsed url   href: '' }
+303 verbose addNamed [ 'markdom', '' ]
+304 verbose addNamed [ null, '*' ]
+305 silly lockFile f6e3f1cb-markdom markdom@
+306 verbose lock markdom@ /Users/lcjun/.npm/f6e3f1cb-markdom.lock
+307 verbose cache add [ 'optimist@', null ]
+308 verbose cache add name=undefined spec="optimist@" args=["optimist@",null]
+309 verbose parsed url { protocol: null,
+309 verbose parsed url   slashes: null,
+309 verbose parsed url   auth: null,
+309 verbose parsed url   host: null,
+309 verbose parsed url   port: null,
+309 verbose parsed url   hostname: null,
+309 verbose parsed url   hash: null,
+309 verbose parsed url   search: null,
+309 verbose parsed url   query: null,
+309 verbose parsed url   pathname: 'optimist@',
+309 verbose parsed url   path: 'optimist@',
+309 verbose parsed url   href: 'optimist@' }
+310 verbose cache add name="optimist" spec="" args=["optimist",""]
+311 verbose parsed url { protocol: null,
+311 verbose parsed url   slashes: null,
+311 verbose parsed url   auth: null,
+311 verbose parsed url   host: null,
+311 verbose parsed url   port: null,
+311 verbose parsed url   hostname: null,
+311 verbose parsed url   hash: null,
+311 verbose parsed url   search: null,
+311 verbose parsed url   query: null,
+311 verbose parsed url   pathname: null,
+311 verbose parsed url   path: null,
+311 verbose parsed url   href: '' }
+312 verbose addNamed [ 'optimist', '' ]
+313 verbose addNamed [ null, '*' ]
+314 silly lockFile 4b6c7f79-optimist optimist@
+315 verbose lock optimist@ /Users/lcjun/.npm/4b6c7f79-optimist.lock
+316 verbose cache add [ 'underscore@', null ]
+317 verbose cache add name=undefined spec="underscore@" args=["underscore@",null]
+318 verbose parsed url { protocol: null,
+318 verbose parsed url   slashes: null,
+318 verbose parsed url   auth: null,
+318 verbose parsed url   host: null,
+318 verbose parsed url   port: null,
+318 verbose parsed url   hostname: null,
+318 verbose parsed url   hash: null,
+318 verbose parsed url   search: null,
+318 verbose parsed url   query: null,
+318 verbose parsed url   pathname: 'underscore@',
+318 verbose parsed url   path: 'underscore@',
+318 verbose parsed url   href: 'underscore@' }
+319 verbose cache add name="underscore" spec="" args=["underscore",""]
+320 verbose parsed url { protocol: null,
+320 verbose parsed url   slashes: null,
+320 verbose parsed url   auth: null,
+320 verbose parsed url   host: null,
+320 verbose parsed url   port: null,
+320 verbose parsed url   hostname: null,
+320 verbose parsed url   hash: null,
+320 verbose parsed url   search: null,
+320 verbose parsed url   query: null,
+320 verbose parsed url   pathname: null,
+320 verbose parsed url   path: null,
+320 verbose parsed url   href: '' }
+321 verbose addNamed [ 'underscore', '' ]
+322 verbose addNamed [ null, '*' ]
+323 silly lockFile 7629b758-underscore underscore@
+324 verbose lock underscore@ /Users/lcjun/.npm/7629b758-underscore.lock
+325 verbose cache add [ 'temp@', null ]
+326 verbose cache add name=undefined spec="temp@" args=["temp@",null]
+327 verbose parsed url { protocol: null,
+327 verbose parsed url   slashes: null,
+327 verbose parsed url   auth: null,
+327 verbose parsed url   host: null,
+327 verbose parsed url   port: null,
+327 verbose parsed url   hostname: null,
+327 verbose parsed url   hash: null,
+327 verbose parsed url   search: null,
+327 verbose parsed url   query: null,
+327 verbose parsed url   pathname: 'temp@',
+327 verbose parsed url   path: 'temp@',
+327 verbose parsed url   href: 'temp@' }
+328 verbose cache add name="temp" spec="" args=["temp",""]
+329 verbose parsed url { protocol: null,
+329 verbose parsed url   slashes: null,
+329 verbose parsed url   auth: null,
+329 verbose parsed url   host: null,
+329 verbose parsed url   port: null,
+329 verbose parsed url   hostname: null,
+329 verbose parsed url   hash: null,
+329 verbose parsed url   search: null,
+329 verbose parsed url   query: null,
+329 verbose parsed url   pathname: null,
+329 verbose parsed url   path: null,
+329 verbose parsed url   href: '' }
+330 verbose addNamed [ 'temp', '' ]
+331 verbose addNamed [ null, '*' ]
+332 silly lockFile 9e481732-temp temp@
+333 verbose lock temp@ /Users/lcjun/.npm/9e481732-temp.lock
+334 verbose cache add [ 'watch@', null ]
+335 verbose cache add name=undefined spec="watch@" args=["watch@",null]
+336 verbose parsed url { protocol: null,
+336 verbose parsed url   slashes: null,
+336 verbose parsed url   auth: null,
+336 verbose parsed url   host: null,
+336 verbose parsed url   port: null,
+336 verbose parsed url   hostname: null,
+336 verbose parsed url   hash: null,
+336 verbose parsed url   search: null,
+336 verbose parsed url   query: null,
+336 verbose parsed url   pathname: 'watch@',
+336 verbose parsed url   path: 'watch@',
+336 verbose parsed url   href: 'watch@' }
+337 verbose cache add name="watch" spec="" args=["watch",""]
+338 verbose parsed url { protocol: null,
+338 verbose parsed url   slashes: null,
+338 verbose parsed url   auth: null,
+338 verbose parsed url   host: null,
+338 verbose parsed url   port: null,
+338 verbose parsed url   hostname: null,
+338 verbose parsed url   hash: null,
+338 verbose parsed url   search: null,
+338 verbose parsed url   query: null,
+338 verbose parsed url   pathname: null,
+338 verbose parsed url   path: null,
+338 verbose parsed url   href: '' }
+339 verbose addNamed [ 'watch', '' ]
+340 verbose addNamed [ null, '*' ]
+341 silly lockFile af45c107-watch watch@
+342 verbose lock watch@ /Users/lcjun/.npm/af45c107-watch.lock
+343 verbose cache add [ 'vows@>=0.5.4', null ]
+344 verbose cache add name=undefined spec="vows@>=0.5.4" args=["vows@>=0.5.4",null]
+345 verbose parsed url { protocol: null,
+345 verbose parsed url   slashes: null,
+345 verbose parsed url   auth: null,
+345 verbose parsed url   host: null,
+345 verbose parsed url   port: null,
+345 verbose parsed url   hostname: null,
+345 verbose parsed url   hash: null,
+345 verbose parsed url   search: null,
+345 verbose parsed url   query: null,
+345 verbose parsed url   pathname: 'vows@%3E=0.5.4',
+345 verbose parsed url   path: 'vows@%3E=0.5.4',
+345 verbose parsed url   href: 'vows@%3E=0.5.4' }
+346 verbose cache add name="vows" spec=">=0.5.4" args=["vows",">=0.5.4"]
+347 verbose parsed url { protocol: null,
+347 verbose parsed url   slashes: null,
+347 verbose parsed url   auth: null,
+347 verbose parsed url   host: null,
+347 verbose parsed url   port: null,
+347 verbose parsed url   hostname: null,
+347 verbose parsed url   hash: null,
+347 verbose parsed url   search: null,
+347 verbose parsed url   query: null,
+347 verbose parsed url   pathname: '%3E=0.5.4',
+347 verbose parsed url   path: '%3E=0.5.4',
+347 verbose parsed url   href: '%3E=0.5.4' }
+348 verbose addNamed [ 'vows', '>=0.5.4' ]
+349 verbose addNamed [ null, '>=0.5.4' ]
+350 silly lockFile 24d43a5d-vows-0-5-4 vows@>=0.5.4
+351 verbose lock vows@>=0.5.4 /Users/lcjun/.npm/24d43a5d-vows-0-5-4.lock
+352 verbose cache add [ 'app.js@', null ]
+353 verbose cache add name=undefined spec="app.js@" args=["app.js@",null]
+354 verbose parsed url { protocol: null,
+354 verbose parsed url   slashes: null,
+354 verbose parsed url   auth: null,
+354 verbose parsed url   host: null,
+354 verbose parsed url   port: null,
+354 verbose parsed url   hostname: null,
+354 verbose parsed url   hash: null,
+354 verbose parsed url   search: null,
+354 verbose parsed url   query: null,
+354 verbose parsed url   pathname: 'app.js@',
+354 verbose parsed url   path: 'app.js@',
+354 verbose parsed url   href: 'app.js@' }
+355 verbose cache add name="app.js" spec="" args=["app.js",""]
+356 verbose parsed url { protocol: null,
+356 verbose parsed url   slashes: null,
+356 verbose parsed url   auth: null,
+356 verbose parsed url   host: null,
+356 verbose parsed url   port: null,
+356 verbose parsed url   hostname: null,
+356 verbose parsed url   hash: null,
+356 verbose parsed url   search: null,
+356 verbose parsed url   query: null,
+356 verbose parsed url   pathname: null,
+356 verbose parsed url   path: null,
+356 verbose parsed url   href: '' }
+357 verbose addNamed [ 'app.js', '' ]
+358 verbose addNamed [ null, '*' ]
+359 silly lockFile f582df3f-app-js app.js@
+360 verbose lock app.js@ /Users/lcjun/.npm/f582df3f-app-js.lock
+361 silly addNameRange { name: 'bcrypt', range: '*', hasData: false }
+362 silly addNameRange { name: 'dandy', range: '*', hasData: false }
+363 silly addNameRange { name: 'datetime', range: '*', hasData: false }
+364 silly addNameRange { name: 'diskcache', range: '*', hasData: false }
+365 silly addNameRange { name: 'express-store', range: '*', hasData: false }
+366 silly addNameRange { name: 'flickr-reflection', range: '*', hasData: false }
+367 silly addNameRange { name: 'glob', range: '*', hasData: false }
+368 silly addNameRange { name: 'handlebars', range: '*', hasData: false }
+369 silly addNameRange { name: 'imagemagick', range: '*', hasData: false }
+370 silly addNameRange { name: 'jsdom', range: '*', hasData: false }
+371 silly addNameRange { name: 'markdom', range: '*', hasData: false }
+372 silly addNameRange { name: 'optimist', range: '*', hasData: false }
+373 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+374 silly addNameRange { name: 'temp', range: '*', hasData: false }
+375 silly addNameRange { name: 'watch', range: '*', hasData: false }
+376 silly addNameRange { name: 'vows', range: '>=0.5.4', hasData: false }
+377 verbose url raw bcrypt
+378 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+379 verbose url resolved https://registry.npmjs.org/bcrypt
+380 info trying registry request attempt 1 at 00:17:01
+381 http GET https://registry.npmjs.org/bcrypt
+382 silly addNameRange { name: 'app.js', range: '*', hasData: false }
+383 verbose url raw dandy
+384 verbose url resolving [ 'https://registry.npmjs.org/', './dandy' ]
+385 verbose url resolved https://registry.npmjs.org/dandy
+386 info trying registry request attempt 1 at 00:17:01
+387 http GET https://registry.npmjs.org/dandy
+388 verbose url raw datetime
+389 verbose url resolving [ 'https://registry.npmjs.org/', './datetime' ]
+390 verbose url resolved https://registry.npmjs.org/datetime
+391 info trying registry request attempt 1 at 00:17:01
+392 http GET https://registry.npmjs.org/datetime
+393 verbose url raw diskcache
+394 verbose url resolving [ 'https://registry.npmjs.org/', './diskcache' ]
+395 verbose url resolved https://registry.npmjs.org/diskcache
+396 info trying registry request attempt 1 at 00:17:01
+397 http GET https://registry.npmjs.org/diskcache
+398 verbose url raw express-store
+399 verbose url resolving [ 'https://registry.npmjs.org/', './express-store' ]
+400 verbose url resolved https://registry.npmjs.org/express-store
+401 info trying registry request attempt 1 at 00:17:01
+402 http GET https://registry.npmjs.org/express-store
+403 verbose url raw flickr-reflection
+404 verbose url resolving [ 'https://registry.npmjs.org/', './flickr-reflection' ]
+405 verbose url resolved https://registry.npmjs.org/flickr-reflection
+406 info trying registry request attempt 1 at 00:17:01
+407 http GET https://registry.npmjs.org/flickr-reflection
+408 verbose url raw handlebars
+409 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+410 verbose url resolved https://registry.npmjs.org/handlebars
+411 info trying registry request attempt 1 at 00:17:01
+412 http GET https://registry.npmjs.org/handlebars
+413 verbose url raw imagemagick
+414 verbose url resolving [ 'https://registry.npmjs.org/', './imagemagick' ]
+415 verbose url resolved https://registry.npmjs.org/imagemagick
+416 info trying registry request attempt 1 at 00:17:01
+417 http GET https://registry.npmjs.org/imagemagick
+418 verbose url raw jsdom
+419 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom' ]
+420 verbose url resolved https://registry.npmjs.org/jsdom
+421 info trying registry request attempt 1 at 00:17:01
+422 http GET https://registry.npmjs.org/jsdom
+423 verbose url raw markdom
+424 verbose url resolving [ 'https://registry.npmjs.org/', './markdom' ]
+425 verbose url resolved https://registry.npmjs.org/markdom
+426 info trying registry request attempt 1 at 00:17:01
+427 http GET https://registry.npmjs.org/markdom
+428 verbose url raw temp
+429 verbose url resolving [ 'https://registry.npmjs.org/', './temp' ]
+430 verbose url resolved https://registry.npmjs.org/temp
+431 info trying registry request attempt 1 at 00:17:02
+432 http GET https://registry.npmjs.org/temp
+433 verbose url raw watch
+434 verbose url resolving [ 'https://registry.npmjs.org/', './watch' ]
+435 verbose url resolved https://registry.npmjs.org/watch
+436 info trying registry request attempt 1 at 00:17:02
+437 http GET https://registry.npmjs.org/watch
+438 verbose url raw vows
+439 verbose url resolving [ 'https://registry.npmjs.org/', './vows' ]
+440 verbose url resolved https://registry.npmjs.org/vows
+441 info trying registry request attempt 1 at 00:17:02
+442 http GET https://registry.npmjs.org/vows
+443 verbose url raw app.js
+444 verbose url resolving [ 'https://registry.npmjs.org/', './app.js' ]
+445 verbose url resolved https://registry.npmjs.org/app.js
+446 info trying registry request attempt 1 at 00:17:02
+447 http GET https://registry.npmjs.org/app.js
+448 verbose url raw async
+449 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+450 verbose url resolved https://registry.npmjs.org/async
+451 info trying registry request attempt 1 at 00:17:02
+452 verbose etag "D94E5Z6EVQ6EXLLLNDS8OY5OL"
+453 http GET https://registry.npmjs.org/async
+454 verbose url raw glob
+455 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+456 verbose url resolved https://registry.npmjs.org/glob
+457 info trying registry request attempt 1 at 00:17:02
+458 verbose etag "797I25S9IK910ZN2DAQFXV5YS"
+459 http GET https://registry.npmjs.org/glob
+460 verbose url raw optimist
+461 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+462 verbose url resolved https://registry.npmjs.org/optimist
+463 info trying registry request attempt 1 at 00:17:02
+464 verbose etag "35K4NW4IJ0EPXGAFEERWK372I"
+465 http GET https://registry.npmjs.org/optimist
+466 verbose url raw underscore
+467 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+468 verbose url resolved https://registry.npmjs.org/underscore
+469 info trying registry request attempt 1 at 00:17:02
+470 verbose etag "8XAS9VZ2FPQUOQ7M7B9YEB8QK"
+471 http GET https://registry.npmjs.org/underscore
+472 http 200 https://registry.npmjs.org/diskcache
+473 silly registry.get cb [ 200,
+473 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:02 GMT',
+473 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+473 silly registry.get     etag: '"E3YUDO9VFRGDVO35GWTP7BGPG"',
+473 silly registry.get     'content-type': 'application/json',
+473 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+473 silly registry.get     'cache-control': 'max-age=1',
+473 silly registry.get     'content-length': '16286',
+473 silly registry.get     'accept-ranges': 'bytes',
+473 silly registry.get     age: '0',
+473 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ty68-TYO',
+473 silly registry.get     'x-cache': 'MISS, MISS',
+473 silly registry.get     'x-cache-hits': '0, 0',
+473 silly registry.get     'x-timer': 'S1391617022.264817953,VS0,VS86,VE114,VE198',
+473 silly registry.get     vary: 'Accept',
+473 silly registry.get     connection: 'close' } ]
+474 silly addNameRange number 2 { name: 'diskcache', range: '*', hasData: true }
+475 silly addNameRange versions [ 'diskcache',
+475 silly addNameRange   [ '0.0.1',
+475 silly addNameRange     '0.0.2',
+475 silly addNameRange     '0.0.3',
+475 silly addNameRange     '0.0.4',
+475 silly addNameRange     '0.0.5',
+475 silly addNameRange     '0.0.6',
+475 silly addNameRange     '0.0.7',
+475 silly addNameRange     '0.0.8',
+475 silly addNameRange     '0.0.9',
+475 silly addNameRange     '0.0.10',
+475 silly addNameRange     '0.0.11',
+475 silly addNameRange     '0.0.12',
+475 silly addNameRange     '0.0.13',
+475 silly addNameRange     '0.0.14',
+475 silly addNameRange     '0.0.15',
+475 silly addNameRange     '0.0.16' ] ]
+476 verbose addNamed [ 'diskcache', '0.0.16' ]
+477 verbose addNamed [ '0.0.16', '0.0.16' ]
+478 silly lockFile ecfe1ab8-diskcache-0-0-16 diskcache@0.0.16
+479 verbose lock diskcache@0.0.16 /Users/lcjun/.npm/ecfe1ab8-diskcache-0-0-16.lock
+480 silly lockFile 30744e56-g-diskcache-diskcache-0-0-16-tgz https://registry.npmjs.org/diskcache/-/diskcache-0.0.16.tgz
+481 verbose lock https://registry.npmjs.org/diskcache/-/diskcache-0.0.16.tgz /Users/lcjun/.npm/30744e56-g-diskcache-diskcache-0-0-16-tgz.lock
+482 verbose addRemoteTarball [ 'https://registry.npmjs.org/diskcache/-/diskcache-0.0.16.tgz',
+482 verbose addRemoteTarball   'e22e73025ca9b66c0eb84cdb130555a9c5cb11f3' ]
+483 info retry fetch attempt 1 at 00:17:03
+484 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023229-0.8433435312472284/tmp.tgz
+485 http GET https://registry.npmjs.org/diskcache/-/diskcache-0.0.16.tgz
+486 http 200 https://registry.npmjs.org/underscore
+487 silly registry.get cb [ 200,
+487 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:02 GMT',
+487 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+487 silly registry.get     etag: '"73STAYX5CL68G7CQL3MU9NYXV"',
+487 silly registry.get     'content-type': 'application/json',
+487 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+487 silly registry.get     'cache-control': 'max-age=1',
+487 silly registry.get     'content-length': '40788',
+487 silly registry.get     'accept-ranges': 'bytes',
+487 silly registry.get     age: '19501',
+487 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-ty68-TYO',
+487 silly registry.get     'x-cache': 'HIT, HIT',
+487 silly registry.get     'x-cache-hits': '1, 1',
+487 silly registry.get     'x-timer': 'S1391597558.110425234,VS0,VS87,VE159,VE19464244',
+487 silly registry.get     vary: 'Accept',
+487 silly registry.get     connection: 'close' } ]
+488 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+489 silly addNameRange versions [ 'underscore',
+489 silly addNameRange   [ '1.0.3',
+489 silly addNameRange     '1.0.4',
+489 silly addNameRange     '1.1.0',
+489 silly addNameRange     '1.1.1',
+489 silly addNameRange     '1.1.2',
+489 silly addNameRange     '1.1.3',
+489 silly addNameRange     '1.1.4',
+489 silly addNameRange     '1.1.5',
+489 silly addNameRange     '1.1.6',
+489 silly addNameRange     '1.1.7',
+489 silly addNameRange     '1.2.0',
+489 silly addNameRange     '1.2.1',
+489 silly addNameRange     '1.2.2',
+489 silly addNameRange     '1.2.3',
+489 silly addNameRange     '1.2.4',
+489 silly addNameRange     '1.3.0',
+489 silly addNameRange     '1.3.1',
+489 silly addNameRange     '1.3.2',
+489 silly addNameRange     '1.3.3',
+489 silly addNameRange     '1.4.0',
+489 silly addNameRange     '1.4.1',
+489 silly addNameRange     '1.4.2',
+489 silly addNameRange     '1.4.3',
+489 silly addNameRange     '1.4.4',
+489 silly addNameRange     '1.5.0',
+489 silly addNameRange     '1.5.1',
+489 silly addNameRange     '1.5.2' ] ]
+490 verbose addNamed [ 'underscore', '1.5.2' ]
+491 verbose addNamed [ '1.5.2', '1.5.2' ]
+492 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+493 verbose lock underscore@1.5.2 /Users/lcjun/.npm/669f6cbc-underscore-1-5-2.lock
+494 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+495 silly lockFile 669f6cbc-underscore-1-5-2 underscore@1.5.2
+496 silly lockFile 7629b758-underscore underscore@
+497 silly lockFile 7629b758-underscore underscore@
+498 http 200 https://registry.npmjs.org/express-store
+499 silly registry.get cb [ 200,
+499 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:03 GMT',
+499 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+499 silly registry.get     etag: '"BYKG0LXSN1TRZKE4D5SLBDT6"',
+499 silly registry.get     'content-type': 'application/json',
+499 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+499 silly registry.get     'cache-control': 'max-age=1',
+499 silly registry.get     'content-length': '1306',
+499 silly registry.get     'accept-ranges': 'bytes',
+499 silly registry.get     age: '0',
+499 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-ty67-TYO',
+499 silly registry.get     'x-cache': 'MISS, MISS',
+499 silly registry.get     'x-cache-hits': '0, 0',
+499 silly registry.get     'x-timer': 'S1391617022.816666603,VS0,VS91,VE130,VE212',
+499 silly registry.get     vary: 'Accept',
+499 silly registry.get     connection: 'close' } ]
+500 http 200 https://registry.npmjs.org/datetime
+501 silly registry.get cb [ 200,
+501 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:03 GMT',
+501 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+501 silly registry.get     etag: '"6RDC5QLUQ6E55JLUY43030DNK"',
+501 silly registry.get     'content-type': 'application/json',
+501 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+501 silly registry.get     'cache-control': 'max-age=1',
+501 silly registry.get     'content-length': '2566',
+501 silly registry.get     'accept-ranges': 'bytes',
+501 silly registry.get     age: '0',
+501 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-ty68-TYO',
+501 silly registry.get     'x-cache': 'MISS, MISS',
+501 silly registry.get     'x-cache-hits': '0, 0',
+501 silly registry.get     'x-timer': 'S1391617022.817052126,VS0,VS90,VE121,VE212',
+501 silly registry.get     vary: 'Accept',
+501 silly registry.get     connection: 'close' } ]
+502 silly addNameRange number 2 { name: 'datetime', range: '*', hasData: true }
+503 silly addNameRange versions [ 'datetime', [ '0.0.1', '0.0.2', '0.0.3' ] ]
+504 verbose addNamed [ 'datetime', '0.0.3' ]
+505 verbose addNamed [ '0.0.3', '0.0.3' ]
+506 silly lockFile 48bbb122-datetime-0-0-3 datetime@0.0.3
+507 verbose lock datetime@0.0.3 /Users/lcjun/.npm/48bbb122-datetime-0-0-3.lock
+508 silly addNameRange number 2 { name: 'express-store', range: '*', hasData: true }
+509 silly addNameRange versions [ 'express-store', [ '0.0.4' ] ]
+510 verbose addNamed [ 'express-store', '0.0.4' ]
+511 verbose addNamed [ '0.0.4', '0.0.4' ]
+512 silly lockFile 7d3a3b93-express-store-0-0-4 express-store@0.0.4
+513 verbose lock express-store@0.0.4 /Users/lcjun/.npm/7d3a3b93-express-store-0-0-4.lock
+514 silly lockFile 6396bcce--org-datetime-datetime-0-0-3-tgz https://registry.npmjs.org/datetime/-/datetime-0.0.3.tgz
+515 verbose lock https://registry.npmjs.org/datetime/-/datetime-0.0.3.tgz /Users/lcjun/.npm/6396bcce--org-datetime-datetime-0-0-3-tgz.lock
+516 silly lockFile 31b59224-ss-store-express-store-0-0-4-tgz https://registry.npmjs.org/express-store/-/express-store-0.0.4.tgz
+517 verbose lock https://registry.npmjs.org/express-store/-/express-store-0.0.4.tgz /Users/lcjun/.npm/31b59224-ss-store-express-store-0-0-4-tgz.lock
+518 verbose addRemoteTarball [ 'https://registry.npmjs.org/datetime/-/datetime-0.0.3.tgz',
+518 verbose addRemoteTarball   'fa9086d20f81d54e7776a8180ee7320ae367ed78' ]
+519 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-store/-/express-store-0.0.4.tgz',
+519 verbose addRemoteTarball   '02f1a440c107fc667178e665cb657d59a4440524' ]
+520 info retry fetch attempt 1 at 00:17:03
+521 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023560-0.9079803247004747/tmp.tgz
+522 info retry fetch attempt 1 at 00:17:03
+523 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023561-0.9226010867860168/tmp.tgz
+524 http GET https://registry.npmjs.org/datetime/-/datetime-0.0.3.tgz
+525 http GET https://registry.npmjs.org/express-store/-/express-store-0.0.4.tgz
+526 http 200 https://registry.npmjs.org/dandy
+527 silly registry.get cb [ 200,
+527 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:03 GMT',
+527 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+527 silly registry.get     etag: '"1BKRAPG8NS98RUDPWOZDWK8QO"',
+527 silly registry.get     'content-type': 'application/json',
+527 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+527 silly registry.get     'cache-control': 'max-age=1',
+527 silly registry.get     'content-length': '4057',
+527 silly registry.get     'accept-ranges': 'bytes',
+527 silly registry.get     age: '0',
+527 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ty68-TYO',
+527 silly registry.get     'x-cache': 'MISS, MISS',
+527 silly registry.get     'x-cache-hits': '0, 0',
+527 silly registry.get     'x-timer': 'S1391617022.810575008,VS0,VS85,VE252,VE336',
+527 silly registry.get     vary: 'Accept',
+527 silly registry.get     connection: 'close' } ]
+528 silly addNameRange number 2 { name: 'dandy', range: '*', hasData: true }
+529 silly addNameRange versions [ 'dandy', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+530 verbose addNamed [ 'dandy', '0.0.5' ]
+531 verbose addNamed [ '0.0.5', '0.0.5' ]
+532 silly lockFile 165e8ae0-dandy-0-0-5 dandy@0.0.5
+533 verbose lock dandy@0.0.5 /Users/lcjun/.npm/165e8ae0-dandy-0-0-5.lock
+534 silly lockFile b4ae974e--npmjs-org-dandy-dandy-0-0-5-tgz https://registry.npmjs.org/dandy/-/dandy-0.0.5.tgz
+535 verbose lock https://registry.npmjs.org/dandy/-/dandy-0.0.5.tgz /Users/lcjun/.npm/b4ae974e--npmjs-org-dandy-dandy-0-0-5-tgz.lock
+536 verbose addRemoteTarball [ 'https://registry.npmjs.org/dandy/-/dandy-0.0.5.tgz',
+536 verbose addRemoteTarball   '4a229f73330723ab0598a9bd569d8110c19241b7' ]
+537 info retry fetch attempt 1 at 00:17:03
+538 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023670-0.8206356472801417/tmp.tgz
+539 http GET https://registry.npmjs.org/dandy/-/dandy-0.0.5.tgz
+540 http 200 https://registry.npmjs.org/imagemagick
+541 silly registry.get cb [ 200,
+541 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:03 GMT',
+541 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+541 silly registry.get     etag: '"ECZBJ71V201HS7O6AAJPB9Q0U"',
+541 silly registry.get     'content-type': 'application/json',
+541 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+541 silly registry.get     'cache-control': 'max-age=1',
+541 silly registry.get     'content-length': '8892',
+541 silly registry.get     'accept-ranges': 'bytes',
+541 silly registry.get     age: '24270',
+541 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ty66-TYO',
+541 silly registry.get     'x-cache': 'HIT, MISS',
+541 silly registry.get     'x-cache-hits': '1, 0',
+541 silly registry.get     'x-timer': 'S1391617022.814720392,VS0,VS265,VE276,VE356',
+541 silly registry.get     vary: 'Accept',
+541 silly registry.get     connection: 'close' } ]
+542 silly addNameRange number 2 { name: 'imagemagick', range: '*', hasData: true }
+543 silly addNameRange versions [ 'imagemagick', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3' ] ]
+544 verbose addNamed [ 'imagemagick', '0.1.3' ]
+545 verbose addNamed [ '0.1.3', '0.1.3' ]
+546 silly lockFile f520a523-imagemagick-0-1-3 imagemagick@0.1.3
+547 verbose lock imagemagick@0.1.3 /Users/lcjun/.npm/f520a523-imagemagick-0-1-3.lock
+548 silly lockFile ffa5611b-magemagick-imagemagick-0-1-3-tgz https://registry.npmjs.org/imagemagick/-/imagemagick-0.1.3.tgz
+549 verbose lock https://registry.npmjs.org/imagemagick/-/imagemagick-0.1.3.tgz /Users/lcjun/.npm/ffa5611b-magemagick-imagemagick-0-1-3-tgz.lock
+550 verbose addRemoteTarball [ 'https://registry.npmjs.org/imagemagick/-/imagemagick-0.1.3.tgz',
+550 verbose addRemoteTarball   '7483cea093b4d9f2e2f396857adc8821b537c56a' ]
+551 info retry fetch attempt 1 at 00:17:03
+552 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023694-0.6540746202226728/tmp.tgz
+553 http GET https://registry.npmjs.org/imagemagick/-/imagemagick-0.1.3.tgz
+554 http 200 https://registry.npmjs.org/flickr-reflection
+555 silly registry.get cb [ 200,
+555 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:03 GMT',
+555 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+555 silly registry.get     etag: '"11L3LBNXNF3W3I5F6WUNQSG1P"',
+555 silly registry.get     'content-type': 'application/json',
+555 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+555 silly registry.get     'cache-control': 'max-age=1',
+555 silly registry.get     'content-length': '960',
+555 silly registry.get     'accept-ranges': 'bytes',
+555 silly registry.get     age: '0',
+555 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-ty68-TYO',
+555 silly registry.get     'x-cache': 'MISS, MISS',
+555 silly registry.get     'x-cache-hits': '0, 0',
+555 silly registry.get     'x-timer': 'S1391617022.813341141,VS0,VS262,VE288,VE371',
+555 silly registry.get     vary: 'Accept',
+555 silly registry.get     connection: 'close' } ]
+556 silly addNameRange number 2 { name: 'flickr-reflection', range: '*', hasData: true }
+557 silly addNameRange versions [ 'flickr-reflection', [ '0.0.1' ] ]
+558 verbose addNamed [ 'flickr-reflection', '0.0.1' ]
+559 verbose addNamed [ '0.0.1', '0.0.1' ]
+560 silly lockFile c08d57ad-flickr-reflection-0-0-1 flickr-reflection@0.0.1
+561 verbose lock flickr-reflection@0.0.1 /Users/lcjun/.npm/c08d57ad-flickr-reflection-0-0-1.lock
+562 silly lockFile 9e2ab794-tion-flickr-reflection-0-0-1-tgz https://registry.npmjs.org/flickr-reflection/-/flickr-reflection-0.0.1.tgz
+563 verbose lock https://registry.npmjs.org/flickr-reflection/-/flickr-reflection-0.0.1.tgz /Users/lcjun/.npm/9e2ab794-tion-flickr-reflection-0-0-1-tgz.lock
+564 verbose addRemoteTarball [ 'https://registry.npmjs.org/flickr-reflection/-/flickr-reflection-0.0.1.tgz',
+564 verbose addRemoteTarball   '96534e404680134f2104109f925eda3709d1fe9a' ]
+565 info retry fetch attempt 1 at 00:17:03
+566 verbose fetch to= /var/folders/tn/fcmkq04s2sg8xyxxndp5mt280000gp/T/npm-30989-rVngIdrx/1391617023730-0.607082846807316/tmp.tgz
+567 http GET https://registry.npmjs.org/flickr-reflection/-/flickr-reflection-0.0.1.tgz
+568 http 404 https://registry.npmjs.org/api.js
+569 silly registry.get cb [ 404,
+569 silly registry.get   { date: 'Wed, 05 Feb 2014 16:17:02 GMT',
+569 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+569 silly registry.get     'content-type': 'application/json',
+569 silly registry.get     via: '1.1 varnish, 1.1 varnish',
+569 silly registry.get     'cache-control': 'max-age=0',
+569 silly registry.get     'content-length': '52',
+569 silly registry.get     'accept-ranges': 'bytes',
+569 silly registry.get     age: '0',
+569 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-ty66-TYO',
+569 silly registry.get     'x-cache': 'MISS, MISS',
+569 silly registry.get     'x-cache-hits': '0, 0',
+569 silly registry.get     'x-timer': 'S1391617022.141534567,VS0,VS86,VE127,VE210',
+569 silly registry.get     connection: 'close' } ]
+570 silly lockFile a12544fa-api-js api.js@
+571 silly lockFile a12544fa-api-js api.js@
+572 verbose about to build /Users/lcjun/node_modules/nerve
+573 info /Users/lcjun/node_modules/nerve unbuild
+574 info preuninstall nerve@0.0.18
+575 info uninstall nerve@0.0.18
+576 verbose true,/Users/lcjun/node_modules,/Users/lcjun/node_modules unbuild nerve@0.0.18
+577 info postuninstall nerve@0.0.18
+578 error 404 'api.js' is not in the npm registry.
+578 error 404 You should bug the author to publish it
+578 error 404 It was specified as a dependency of 'nerve'
+578 error 404
+578 error 404 Maybe try 'npm search api'
+578 error 404
+578 error 404 Note that you can also install from a
+578 error 404 tarball, folder, or http url, or git url.
+579 error System Darwin 13.0.0
+580 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "nerve"
+581 error cwd /Users/lcjun/myfriends
+582 error node -v v0.11.11-pre
+583 error npm -v 1.3.23
+584 error code E404
+585 verbose exit [ 1, true ]
